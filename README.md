@@ -8,7 +8,7 @@ How to use ? it's very simple !
 $('#elementform').enterform();
 
 How to reinitialize for example in ajax call ? 
-
+<pre>
 $.ajax({ 
   type: 'post',
 	url: 'some_url_here'
@@ -18,7 +18,7 @@ $.ajax({
 		$('#elementform').enterform('reinitialize');
 	}
 });
-
+</pre>
 if you want to prevent several element for this enterform? just add class like this 
 
 <input type="text" id="name" name="name" class="nofocus">
