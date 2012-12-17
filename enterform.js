@@ -78,16 +78,16 @@ agindanoe@gmail.com
 		
 		base.destroy = function(){
 			 try{
-				 base.$elform.unbind();
+				 base.$elform.unbind("keypress");
 				 base.$elform.each(function(index,item){
 					if($.inArray($(item).prop('tagName').toLowerCase(),base.$arrForm)){
-						$(item).unbind();
+						$(item).unbind("keypress");
 						$(item).element = null;
 					}
 				 });
-				 base.$el.removeData('enterform');
+				 //base.$el.removeData('enterform');
 				 base.$el.element = null;
-				 console.log("destroooy");
+				 console.log("destroooy bro");
 			 }catch(e){ console.log(e.message); }
 		};
         
