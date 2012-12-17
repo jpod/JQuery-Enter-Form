@@ -22,9 +22,8 @@ $.ajax({
 });
 </pre>
 if you want to prevent several element for this enterform? just add class like this 
-<pre>
+
 <input type="text" id="name" name="name" class="nofocus">
-</pre>
 
 you can custom this plugin as you want
 
